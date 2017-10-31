@@ -1,0 +1,319 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.querySelector('html').style.fontSize=window.screen.width/20+'px';
+        window.onresize=function(){
+            document.querySelector('html').style.fontSize=window.screen.width/20+'px';
+        }
+    </script>
+    <!--先引入第三方包-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <!--在引入知己写的样式-->
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+
+<body>
+<!--主页容器-->
+<div class="layout">
+    <!--遮罩层-->
+    <div class="mask"></div>
+    <!--主页头部区域-->
+    <header id="header">
+        <i class="glyphicon glyphicon-list mymenu"></i>
+        <h4>二次元</h4>
+        <i class="glyphicon glyphicon-search myfdj"></i>
+    </header>
+    <!--主页轮播图容器-->
+    <section id="silide">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/l1.jpg" alt="...">
+                    <div class="carousel-caption">
+                       机不可失失去在等分10年..
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/l2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        清仓大甩卖,你家可能缺一个大冰箱来放大象...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/l4.jpg" alt="...">
+                    <div class="carousel-caption">
+                        卷..抢到你手软.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--主页的动漫tab栏-->
+    <section id="cartoon">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">新增连载</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">新增完结</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">推送连载</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">推荐完结</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(1).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(206).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <ul>
+                    <li class="col-xs-6">
+                        <a href="#">
+                            <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                            <p>连载连载</p>
+                        </a>
+                    </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(440).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+
+                </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/lofter_header_icon_%20(534).jpg" alt=""/>
+                                <p>连载连载</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!--左边的导航菜单-->
+    <div class="left-menu">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#">
+                    <img src="images/cp2.jpg" alt="" style="width: 100%;"/>
+                </a>
+            </li>
+            <li class="list-group-item">
+                连载连载2
+            </li>
+            <li class="list-group-item">
+               连载连载3
+            </li>
+            <li class="list-group-item">
+                连载连载4
+            </li>
+            <li class="list-group-item">
+                连载连载5
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
+ <!--引入bootstrap的是依赖jquery的需要先引入jquery-->
+ <script src="lib/jquery/jquery.min.js"></script>
+ <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+ <script src="js/index.js"></script>
+<script>
+
+
+</script>

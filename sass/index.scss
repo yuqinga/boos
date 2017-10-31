@@ -1,0 +1,126 @@
+@import "base.scss";
+
+@function p2r($size){
+  @return ($size/32*1rem);
+}
+
+
+.layout{
+  //transform: translateX(p2r(200));
+  width: 100%;
+  height: 100%;
+  //头部的结构
+  #header{
+    height:p2r(90);
+    background-color: #eee;
+    line-height: p2r(90);
+    i{
+      font-size: p2r(30);
+    }
+    .mymenu{
+      position: absolute;
+      top: 0;
+      left: p2r(20);
+      line-height: p2r(90);
+    }
+    h4{
+      text-align: center;
+      line-height: p2r(90);
+    }
+    .myfdj{
+      position: absolute;
+      right: p2r(20);
+      top: 0;
+      line-height: p2r(90);
+    }
+  }
+  //轮播图部分
+  #silide{
+    .carousel-indicators{
+      width: 20%;
+      position: absolute;
+      left: 90%;
+      bottom: p2r(10);
+      margin-left: -10%;
+      line-height: p2r(10);
+    }
+    .carousel-caption{
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      padding: p2r(10) 0;
+      background-color: rgba(0,0,0,.5);
+      text-align: left;
+      padding-left: p2r(20);
+    }
+  }
+  //tab栏部分
+  #cartoon{
+    >.nav-tabs{
+      >li{
+        width: 25%;
+        >a{
+          border-radius: 0;
+          border: 0;
+          font-size: p2r(14);
+          text-align: center;
+        }
+        &.active{
+          border-bottom: 2px solid red;
+
+        }
+      }
+
+    }
+    //新增连载的内容部分
+    >.tab-content{
+      >.tab-pane{
+        >ul{
+          >li{
+            margin-top: p2r(10);
+            >a{
+              display: block;
+              position: relative;
+              >img{
+                width: 100%;
+                height: 100%;
+              }
+              >p{
+                width: 100%;
+                height: p2r(40);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,.4);
+                text-align: center;
+                line-height: p2r(40);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+  //将侧边栏菜案隐藏
+  .left-menu{
+    width: p2r(200);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: p2r(-200);
+  }
+
+}
+
+
+.mask{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  background-color: rgba(0,0,0,.3);
+  z-index: 1000;
+  display: none;
+}
